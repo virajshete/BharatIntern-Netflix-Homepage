@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: black;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.container::before{
+  content: "";
+  background: url(img/Netflix\ BG.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+.container .navbar{
+  height: 100px;
+  display: flex;
+}
+.container .navbar .left{
+  height: 100%;
+  display: flex;
+  float: left;
+}
+.container .navbar .left img{
+  margin: 50px;
+  height: 50px;
+  position: absolute;
+  left: 75px;
+}
+.container .navbar .right{
+  display: flex;
+  margin: 25px;
+  height: 100px;
+  float: right;
+  position: absolute;
+  right: 75px;
+}
+
+.container .navbar .right button{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 550;
+  padding: 7px 17px;
+  background: #e50914;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+}
+.container .navbar .right button a{
+  text-decoration: none;
+  color: white;
+}
+.container .title{
+  padding: 70px 45px;
+}
+.container .title .content{
+  width: 950px;
+  margin: auto;
+  padding: 75px 0;
+  text-align: center;
+}
+.container .title .content h1{
+  width: 950px;
+  margin: auto;
+  font-size: 3.1rem;
+  text-align: center;
+}
+.container .title .content h2{
+  width: 750px;
+  margin: auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.container .title .content form h3{
+  font-size: 1rem;
+  margin: 18px 0;
+  text-align: center;
+}
+.container .title .content form .email{
+  width: 750px;
+  margin: auto;
+}
+.container .title .content form .email input{
+  height: 60px;
+  width: 450px;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.container .title .content form .email button{
+  margin: auto;
+  height: 58px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 550;
+  padding: 7px 17px;
+  background: #e50914;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-left: 0px;
+}
+.container .title .content form .email button:hover{
+  background-color: #f40612;
+}
+.container .title .content form .email button a{
+  text-decoration: none;
+  color: white;
+}
